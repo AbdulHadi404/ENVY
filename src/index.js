@@ -36,13 +36,13 @@ const rrfProps = {
 ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
-      <React.Fragment>
-        {/* <React.StrictMode> */}
+      {/* <React.Fragment> */}
+      <React.StrictMode>
         <Router>
           <App />
         </Router>
-        {/* </React.StrictMode> */}
-      </React.Fragment>
+      </React.StrictMode>
+      {/* </React.Fragment> */}
     </ReactReduxFirebaseProvider>
   </Provider>,
   document.getElementById('root')

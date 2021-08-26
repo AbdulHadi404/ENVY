@@ -1,7 +1,4 @@
-import React from 'react';
-import { getFirestore } from 'redux-firestore';
-
-const addNote = (note) => {
+export const addNote = (note) => {
   return (dispatch, getState, { getFirestore }) => {
     const firestore = getFirestore();
     firestore
@@ -19,5 +16,3 @@ const addNote = (note) => {
       });
   };
 };
-
-export default addNote;

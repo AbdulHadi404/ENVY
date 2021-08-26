@@ -1,5 +1,6 @@
 import firebase from 'firebase';
 import 'firebase/firestore';
+
 var firebaseConfig = {
   apiKey: 'AIzaSyCQmt1v24SU0cxerozjPm0ubT5yCD8Gqiw',
   authDomain: 'envy-e9d82.firebaseapp.com',
@@ -16,4 +17,4 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 export { auth };
 export { db };
-export default firebaseConfig;
+export default firebase;
