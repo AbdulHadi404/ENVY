@@ -7,14 +7,14 @@ font-family: 'Roboto Mono', monospace; */
 
 * {
   box-sizing: border-box;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-family: 'Comfortaa', serif;
 }
 body {
   background: #e2fae359 !important;
   min-height: 100vh;
   display: flex;
-  font-weight: 400;
+  /* font-weight: 400; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -5,6 +5,10 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
   NavbarBrand,
   Nav,
   NavItem,
@@ -30,11 +34,24 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink>Collection</NavLink>
             </NavItem>
-            <NavItem>
-              <Link className="no-decor" to="/notes">
-                <NavLink>Notes</NavLink>
-              </Link>
-            </NavItem>
+            <UncontrolledDropdown>
+              <DropdownToggle nav caret>
+                Notes
+              </DropdownToggle>
+              <DropdownMenu left>
+                <DropdownItem>
+                  <Link className="no-decor" to="/notes/notes">
+                    Notes
+                  </Link>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <Link className="no-decor" to="/notes/favorites">
+                    Favorites
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
           <Link to="/signin">
             <Button className="button-margin" outline color="success">

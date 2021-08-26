@@ -1,6 +1,14 @@
 import React from 'react';
 import useInput from '../../custom-hooks/useInput';
-import { Button, Form, FormGroup, Input, Card, CardTitle } from 'reactstrap';
+import {
+  Container,
+  Button,
+  Form,
+  FormGroup,
+  Input,
+  Card,
+  CardTitle,
+} from 'reactstrap';
 import './Card.css';
 import { addNote } from '../../store/actions/noteAction';
 import { useDispatch } from 'react-redux';
@@ -17,9 +25,9 @@ const AddNotes = () => {
   };
 
   return (
-    <div>
-      <Card className="card-component" body>
-        <CardTitle tag="h5">Note</CardTitle>
+    <Container fluid={true}>
+      <Card className="text-center" body>
+        <CardTitle tag="h5">New Note</CardTitle>
         <Form>
           <FormGroup>
             <Input type="text" {...bindTitle} placeholder="Enter Title" />
@@ -37,7 +45,7 @@ const AddNotes = () => {
           </FormGroup>
         </Form>
       </Card>
-    </div>
+    </Container>
   );
 };
 
