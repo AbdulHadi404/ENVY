@@ -25,7 +25,7 @@ const Note = ({ note }) => {
     dispatch(toggleFav(note));
   };
 
-  const favMarkup = note.favorite ? true : false;
+  const favMarkup = note.favorite ? false : true;
 
   return (
     <Card style={{ margin: 15 }}>
