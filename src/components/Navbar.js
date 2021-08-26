@@ -34,24 +34,11 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink>Collection</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Notes
-              </DropdownToggle>
-              <DropdownMenu left>
-                <DropdownItem>
-                  <Link className="no-decor" to="/notes/important">
-                    Important
-                  </Link>
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  <Link className="no-decor" to="/notes/notimportant">
-                    Not Important
-                  </Link>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <Link className="no-decor" to="/notes">
+                <NavLink>Notes</NavLink>
+              </Link>
+            </NavItem>
           </Nav>
           <Link to="/signin">
             <Button className="button-margin" outline color="success">
