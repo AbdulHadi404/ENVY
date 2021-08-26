@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
-import { auth } from '../firebase';
+import { auth } from '../fbconfig';
 
 const SignIn = () => {
   const emailRef = useRef(null);

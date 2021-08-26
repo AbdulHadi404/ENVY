@@ -1,0 +1,23 @@
+.card-component {
+  margin: 10vw 5vw;
+  background-color: '#fffff';
+  border: none;
+  max-width: 30%;
+  max-height: 50vh;
+  padding: '20px';
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.card-textarea {
+  border-radius: 0.5rem;
+  height: 22vh;
+}
+
+@media screen and (max-width: 900px) {
+  .card-component {
+    margin-left: 20vw;
+    max-width: 60%;
+    max-height: 50vh;
+  }
+}

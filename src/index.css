@@ -9,13 +9,18 @@ font-family: 'Roboto Mono', monospace; */
   box-sizing: border-box;
   letter-spacing: 1px;
   font-family: 'Comfortaa', serif;
-  /* font-weight: bold; */
 }
 body {
   background: #e2fae359 !important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-items {
+  margin: 5px;
 }
 
 .container {
@@ -42,8 +47,19 @@ html,
   height: 100vh;
 }
 
+.no-decor {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-decor:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .remember-me {
   margin-left: 20px;
+  margin-bottom: 0px;
 }
 .navbar-brand {
   font-family: 'Orbitron' !important;

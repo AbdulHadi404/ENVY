@@ -27,7 +27,7 @@ const NavBar = (props) => {
         <NavbarBrand href="/">E N V Y</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="nav-items mr-auto" navbar>
             <NavItem>
               <NavLink>Home</NavLink>
             </NavItem>
@@ -38,10 +38,18 @@ const NavBar = (props) => {
               <DropdownToggle nav caret>
                 Notes
               </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Important</DropdownItem>
+              <DropdownMenu left>
+                <DropdownItem>
+                  <Link className="no-decor" to="/notes/important">
+                    Important
+                  </Link>
+                </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Not Important</DropdownItem>
+                <DropdownItem>
+                  <Link className="no-decor" to="/notes/notimportant">
+                    Not Important
+                  </Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
