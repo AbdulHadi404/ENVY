@@ -39,17 +39,13 @@ const NavBar = (props) => {
                 Notes
               </DropdownToggle>
               <DropdownMenu left>
-                <DropdownItem>
-                  <Link className="no-decor" to="/notes/notes">
-                    Notes
-                  </Link>
-                </DropdownItem>
+                <Link className="no-decor" to="/notes/notes">
+                  <DropdownItem>Notes</DropdownItem>
+                </Link>
                 <DropdownItem divider />
-                <DropdownItem>
-                  <Link className="no-decor" to="/notes/favorites">
-                    Favorites
-                  </Link>
-                </DropdownItem>
+                <Link className="no-decor" to="/notes/favorites">
+                  <DropdownItem>Favorites</DropdownItem>
+                </Link>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
