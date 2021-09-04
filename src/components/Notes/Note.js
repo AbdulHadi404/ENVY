@@ -38,7 +38,7 @@ const Note = ({ note }) => {
       </NotesModal>
 
       <CardBody>
-        <CardText>{note.content}</CardText>
+        <CardText className="text">{note.content}</CardText>
       </CardBody>
       <CardFooter className="text-muted">
         <Col>
